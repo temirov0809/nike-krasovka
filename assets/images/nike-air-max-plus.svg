@@ -1,0 +1,54 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" fill="none">
+  <defs>
+    <filter id="shadow-nike-air-max-plus" x="-15%" y="-15%" width="130%" height="145%">
+      <feDropShadow dx="0" dy="26" stdDeviation="22" flood-color="#0a0a0a" flood-opacity="0.14"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0a0a0a" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="ground-nike-air-max-plus" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="50%" stop-color="#000000" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="grad-mid-nike-air-max-plus" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FB923C" stop-opacity="0.25" />
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="400" cy="425" rx="310" ry="22" fill="url(#ground-nike-air-max-plus)" filter="blur(8px)"/>
+
+  <g filter="url(#shadow-nike-air-max-plus)" transform="translate(40, 25)">
+    <path d="M 120 355 C 130 360, 180 370, 240 370 L 530 370 C 600 370, 640 355, 665 330 C 670 325, 665 310, 640 310 C 570 310, 480 305, 420 305 C 340 305, 250 315, 180 315 C 130 315, 105 330, 120 355 Z" fill="#0F172A" stroke="#333333" stroke-width="1.5"/>
+    <path d="M 125 340 C 140 325, 180 315, 250 315 L 530 315 C 585 315, 625 320, 650 325 L 635 295 C 570 295, 480 290, 420 290 C 340 290, 250 300, 180 300 C 130 300, 115 315, 125 340 Z" fill="url(#grad-mid-nike-air-max-plus)" stroke="#E5E7EB" stroke-width="1"/>
+
+    <rect x="200" y="322" width="60" height="14" rx="7" fill="#E2E8F0" stroke="#FB923C" stroke-width="1.5" opacity="0.9"/>
+    <circle cx="215" cy="329" r="3" fill="#FB923C"/>
+    <circle cx="230" cy="329" r="3" fill="#FB923C"/>
+    <circle cx="245" cy="329" r="3" fill="#FB923C"/>
+
+    <path d="M 135 305 C 145 270, 165 240, 205 230 C 235 222, 275 235, 305 240 C 345 220, 395 180, 435 140 C 455 120, 485 125, 505 150 C 520 170, 525 200, 530 230 C 565 235, 620 260, 645 295 Z" fill="#EA580C" stroke="#D1D5DB" stroke-width="1.5"/>
+
+    <path d="M 135 305 C 150 280, 175 265, 215 265 C 240 265, 270 280, 305 290 L 305 310 C 245 310, 180 305, 135 305 Z" fill="#0F172A" opacity="0.95"/>
+    <path d="M 505 230 C 540 235, 595 255, 640 295 L 610 305 C 570 305, 520 295, 495 285 Z" fill="#0F172A" opacity="0.95"/>
+
+    <path d="M 525 235 C 555 240, 595 260, 620 288 C 575 292, 525 290, 495 285 C 495 260, 505 240, 525 235 Z" fill="#EA580C" stroke="#E5E7EB" stroke-width="1"/>
+    <circle cx="550" cy="265" r="2.5" fill="#FB923C"/>
+    <circle cx="565" cy="270" r="2.5" fill="#FB923C"/>
+    <circle cx="580" cy="275" r="2.5" fill="#FB923C"/>
+    <circle cx="540" cy="273" r="2.5" fill="#FB923C"/>
+    <circle cx="555" cy="278" r="2.5" fill="#FB923C"/>
+
+    <path d="M 325 230 C 365 200, 415 160, 440 145 L 465 165 C 435 200, 385 240, 345 260 Z" fill="#0F172A" opacity="0.9"/>
+    <line x1="360" y1="235" x2="390" y2="215" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+    <line x1="385" y1="215" x2="415" y2="190" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+    <line x1="410" y1="190" x2="440" y2="165" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+    <line x1="435" y1="165" x2="460" y2="150" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+
+    <path d="M 180 230 C 170 190, 190 165, 230 165 C 260 165, 285 190, 290 220 Z" fill="#0F172A"/>
+    <path d="M 235 165 L 290 145 C 310 140, 330 160, 320 185 Z" fill="#FB923C"/>
+
+    <path d="M 225 270 C 285 280, 355 285, 405 260 C 465 230, 525 190, 555 175 C 525 205, 465 260, 415 285 C 355 315, 275 310, 205 285 C 190 280, 205 268, 225 270 Z" fill="#F59E0B"/>
+
+    <text x="180" y="260" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="9" fill="#FB923C" letter-spacing="2">TUNED AIR</text>
+  </g>
+</svg>

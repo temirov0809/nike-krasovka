@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* =====================================================================
+   GLOBAL DESIGN TOKENS & RESET
+   ===================================================================== */
+:root {
+  --font-primary: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-editorial: 'Space Grotesk', var(--font-primary);
+  
+  --color-canvas: #FFFFFF;
+  --color-canvas-subtle: #FBFBFC;
+  --color-surface: #F5F5F7;
+  --color-ink-primary: #0A0A0A;
+  --color-ink-secondary: #52525B;
+  --color-ink-muted: #A1A1AA;
+  --color-border-subtle: #E4E4E7;
+  --color-border-strong: #18181B;
+  
+  --radius-pill: 9999px;
+  --radius-card: 20px;
+  --radius-inner: 14px;
+  
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-primary);
+  color: var(--color-ink-primary);
+  background-color: var(--color-canvas);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--color-canvas);
+}
+
+/* =====================================================================
+   TYPOGRAPHY SPECIFICS (REFERENCE SCREENSHOT 1 INTERPRETATION)
+   ===================================================================== */
+.font-editorial {
+  font-family: var(--font-editorial);
+}
+
+/* Outline font effect matching 'DYMAS' in reference */
+.text-outline-hero {
+  color: transparent !important;
+  -webkit-text-stroke: 1.5px #0A0A0A;
+  letter-spacing: -0.04em;
+  transition: -webkit-text-stroke 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .text-outline-hero {
+    -webkit-text-stroke: 2.2px #0A0A0A;
+  }
+}
+
+.text-solid-hero {
+  color: #0A0A0A;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+/* =====================================================================
+   CARD & PILL INTERACTION SYSTEM (REFERENCE SCREENSHOT 3)
+   ===================================================================== */
+.pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #FFFFFF;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-pill);
+  padding: 0.4rem 1rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-ink-primary);
+  transition: all 0.25s var(--ease-spring);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.pill-badge:hover {
+  border-color: var(--color-ink-primary);
+  transform: translateY(-1px);
+}
+
+.pill-button-black {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  padding: 0.65rem 1.4rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-spring);
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.pill-button-black:hover {
+  background-color: #000000;
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+.pill-button-black:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.pill-button-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #FFFFFF;
+  color: #0A0A0A;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-pill);
+  padding: 0.65rem 1.4rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-spring);
+  text-decoration: none;
+}
+
+.pill-button-outline:hover {
+  border-color: #0A0A0A;
+  background-color: #F8F8F9;
+  transform: translateY(-1px);
+}
+
+.pill-tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: #F4F4F5;
+  color: #52525B;
+  border-radius: var(--radius-pill);
+  padding: 0.35rem 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: all 0.2s ease;
+}
+
+.pill-tag:hover {
+  background-color: #E4E4E7;
+  color: #0A0A0A;
+}
+
+/* =====================================================================
+   EDITORIAL PRODUCT CARD (REFERENCE 3 REIMAGINED)
+   ===================================================================== */
+.editorial-card {
+  background-color: #FFFFFF;
+  border: 1px solid #ECECEE;
+  border-radius: var(--radius-card);
+  padding: 1.25rem;
+  transition: all 0.35s var(--ease-spring);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.editorial-card:hover {
+  border-color: #0A0A0A;
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.07);
+  transform: translateY(-3px);
+}
+
+.card-media-wrapper {
+  background-color: #F6F6F8;
+  border-radius: var(--radius-inner);
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 16 / 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.card-media-wrapper img,
+.card-media-wrapper svg {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  transition: transform 0.5s var(--ease-spring);
+  filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.08));
+}
+
+.editorial-card:hover .card-media-wrapper img,
+.editorial-card:hover .card-media-wrapper svg {
+  transform: scale(1.05) translateY(-3px);
+}
+
+/* =====================================================================
+   HERO SNEAKER SHOWCASE ANIMATIONS
+   ===================================================================== */
+@keyframes floatSneaker {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-1deg);
+  }
+}
+
+@keyframes shadowPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.18;
+  }
+  50% {
+    transform: scale(0.92);
+    opacity: 0.10;
+  }
+}
+
+.hero-sneaker-float {
+  animation: floatSneaker 5.5s ease-in-out infinite;
+}
+
+.hero-shadow-pulse {
+  animation: shadowPulse 5.5s ease-in-out infinite;
+}
+
+/* =====================================================================
+   MARQUEE TICKER ANIMATION
+   ===================================================================== */
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: ticker 32s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* =====================================================================
+   MODAL & DRAWER TRANSITIONS
+   ===================================================================== */
+.drawer-backdrop {
+  background: rgba(10, 10, 10, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: opacity 0.3s ease;
+}
+
+.drawer-panel {
+  transition: transform 0.4s var(--ease-spring);
+}
+
+/* Custom Minimal Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4D4D8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A1A1AA;
+}
+
+/* Accessible focus outline */
+:focus-visible {
+  outline: 2px solid #0A0A0A;
+  outline-offset: 2px;
+}

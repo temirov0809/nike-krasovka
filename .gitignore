@@ -1,0 +1,10 @@
+# Dependencies & backups
+_old_backup/
+*.zip
+*.log
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

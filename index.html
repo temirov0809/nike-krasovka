@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIKE — Official Exclusive Store | Rasmiy Do'kon</title>
+  <meta name="description" content="Premium Nike sneaker e-commerce website. Authentic Nike sneakers, Air Force 1, Dunk Low, Jordan, Vomero. Tashkent & Uzbekistan express delivery.">
+
+  <!-- Favicon: Clean Nike Swoosh -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'><path d='M21.707 5.293c-2.457 1.83-5.26 3.518-8.414 5.065-2.827 1.385-5.69 2.56-8.593 3.525C2.868 14.49 1.5 15.02 0 15.485c2.435-.29 4.887-.91 7.355-1.86 3.238-1.246 6.305-2.87 9.2-4.872 2.21-1.53 4.093-3.237 5.152-3.46z'/></svg>">
+
+  <!-- Tailwind CSS via CDN with custom configurations -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#0A0A0A',
+              pure: '#000000',
+              gray: '#F5F5F7',
+              border: '#E4E4E7'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            editorial: ['"Space Grotesk"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Design System Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-neutral-900 selection:bg-black selection:text-white">
+
+  <!-- App Mount Root -->
+  <div id="app"></div>
+
+  <!-- Application Bundle (Supports both file:// and http://) -->
+  <script src="js/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" fill="none">
+  <!-- Dynamic modern Nike Sneaker Silhouette: Air Force 1 '07 (Triple White / Crisp Minimal) -->
+  <defs>
+    <filter id="shadow-af1" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="24" flood-color="#0a0a0a" flood-opacity="0.12"/>
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0a0a0a" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="sole-grad-af1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000" flood-opacity="0.1"/>
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#EEEEEE" />
+    </linearGradient>
+    <linearGradient id="upper-grad-af1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F8F8FA" />
+      <stop offset="100%" stop-color="#F0F0F3" />
+    </linearGradient>
+    <linearGradient id="ambient-ground" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="50%" stop-color="#000000" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Ground Shadow -->
+  <ellipse cx="400" cy="420" rx="310" ry="24" fill="url(#ambient-ground)" filter="blur(8px)"/>
+
+  <!-- Main Sneaker Group with dynamic angle -->
+  <g filter="url(#shadow-af1)" transform="translate(40, 20)">
+    <!-- Thick Chunky Sole (Air Force 1 Signature) -->
+    <path d="M 120 350 C 130 355, 170 365, 230 365 L 530 365 C 590 365, 630 350, 660 325 C 665 320, 660 305, 640 305 C 570 305, 480 300, 420 300 C 340 300, 250 310, 180 310 C 130 310, 105 325, 120 350 Z" fill="url(#sole-grad-af1)" stroke="#D8D8DC" stroke-width="2"/>
+    
+    <!-- Sole tread lines & AIR embossing -->
+    <path d="M 190 360 L 590 360" stroke="#CCCCCC" stroke-width="1.5" stroke-dasharray="8 6"/>
+    <text x="500" y="342" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="14" fill="#999999" letter-spacing="3">AIR</text>
+    <line x1="475" y1="337" x2="490" y2="337" stroke="#BBBBBB" stroke-width="2"/>
+    <line x1="545" y1="337" x2="560" y2="337" stroke="#BBBBBB" stroke-width="2"/>
+
+    <!-- Upper Body -->
+    <path d="M 130 315 C 140 280, 160 250, 200 240 C 230 232, 270 245, 300 250 C 340 230, 390 190, 430 150 C 450 130, 480 135, 500 160 C 515 180, 520 210, 525 240 C 560 245, 615 270, 640 305 Z" fill="url(#upper-grad-af1)" stroke="#E0E0E6" stroke-width="1.5"/>
+
+    <!-- Perforated Toe Box -->
+    <path d="M 530 245 C 560 250, 600 270, 625 298 C 580 302, 530 300, 500 295 C 500 270, 510 250, 530 245 Z" fill="#F4F4F7" stroke="#DCDCE2" stroke-width="1"/>
+    <!-- Ventilation Dots -->
+    <circle cx="560" cy="275" r="2.5" fill="#BFBFC7"/>
+    <circle cx="575" cy="280" r="2.5" fill="#BFBFC7"/>
+    <circle cx="590" cy="285" r="2.5" fill="#BFBFC7"/>
+    <circle cx="550" cy="283" r="2.5" fill="#BFBFC7"/>
+    <circle cx="565" cy="288" r="2.5" fill="#BFBFC7"/>
+
+    <!-- Eyestay and Lacing System -->
+    <path d="M 330 240 C 370 210, 420 170, 445 155 L 470 175 C 440 210, 390 250, 350 270 Z" fill="#EAEAEF" stroke="#D0D0D8" stroke-width="1.5"/>
+    <line x1="365" y1="245" x2="395" y2="225" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+    <line x1="390" y1="225" x2="420" y2="200" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+    <line x1="415" y1="200" x2="445" y2="175" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+    <line x1="440" y1="175" x2="465" y2="160" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Iconic Nike Swoosh -->
+    <path d="M 230 280 C 290 290, 360 295, 410 270 C 470 240, 530 200, 560 185 C 530 215, 470 270, 420 295 C 360 325, 280 320, 210 295 C 195 290, 210 278, 230 280 Z" fill="#111111"/>
+
+    <!-- Collar & Heel Counter -->
+    <path d="M 140 310 C 135 280, 145 250, 185 240 C 205 235, 230 245, 240 275 C 245 295, 230 310, 200 312 Z" fill="#F0F0F5" stroke="#D0D0D8" stroke-width="1"/>
+    <path d="M 180 238 C 170 200, 190 175, 230 175 C 260 175, 285 200, 290 230 Z" fill="#1A1A1A"/>
+    <!-- Heel Tab with Nike Air text -->
+    <text x="180" y="270" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="10" fill="#AAAAAA" letter-spacing="1">NIKE AIR</text>
+  </g>
+</svg>
